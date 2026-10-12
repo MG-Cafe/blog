@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<article class="post">
+  <header class="post-header">
+    {% if page.kicker %}<p class="kicker">{{ page.kicker }}</p>{% endif %}
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}<p class="lede">{{ page.description }}</p>{% endif %}
+    <p class="meta">By MG · <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>{% if page.video_id %} · <a href="https://youtu.be/{{ page.video_id }}">Watch the video</a>{% endif %}</p>
+  </header>
+  {% if page.video_id %}
+  <a class="video" href="https://youtu.be/{{ page.video_id }}" aria-label="Watch the video on YouTube">
+    <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title }}" width="1280" height="720">
+    <span class="play" aria-hidden="true"></span>
+  </a>
+  {% endif %}
+  <div class="post-body">
+    {{ content }}
+  </div>
+  <aside class="cta-box">
+    <h2>{{ page.cta_title | default: "Questions?" }}</h2>
+    <p>Join my free community, MG AI School: the resources from every video, free courses in the classroom, and a place to ask questions and share what you build.</p>
+    <a class="button" href="{{ site.community_url }}">Join for free</a>
+  </aside>
+</article>

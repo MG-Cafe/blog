@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  {% feed_meta %}
+  <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="{{ '/' | relative_url }}">MG AI Blog</a>
+      <nav>
+        <a href="{{ site.youtube_url }}">YouTube</a>
+        <a class="pill" href="{{ site.community_url }}">Free community</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+    {{ content }}
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Hands on AI tests by MG. More free resources from every video in <a href="{{ site.community_url }}">MG AI School</a>.</p>
+      <p><a href="{{ site.youtube_url }}">YouTube</a> · <a href="https://www.linkedin.com/in/mohammad-ghodratigohar/">LinkedIn</a> · <a href="https://twitter.com/MG_cafe01">X</a> · <a href="https://github.com/MG-Cafe/blog">GitHub</a></p>
+    </div>
+  </footer>
+  <script src="{{ '/assets/js/copy.js' | relative_url }}" defer></script>
+</body>
+</html>

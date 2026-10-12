@@ -1,0 +1,33 @@
+title: MG AI Blog
+description: Hands on AI tests from my YouTube videos, with the prompts and Claude Code skills you can reuse.
+author: MG
+url: "https://mg-cafe.github.io"
+baseurl: "/blog"
+lang: en
+permalink: /:title/
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+twitter:
+  username: MG_cafe01
+  card: summary_large_image
+social:
+  name: MG
+  links:
+    - https://www.youtube.com/@MG_cafe
+    - https://www.linkedin.com/in/mohammad-ghodratigohar/
+    - https://twitter.com/MG_cafe01
+
+community_url: https://mgai.school/mg-ai/about
+youtube_url: https://www.youtube.com/@MG_cafe
+
+exclude:
+  - README.md
+  - skills/

@@ -1,0 +1,22 @@
+---
+layout: default
+title: MG AI Blog
+---
+<section class="intro">
+  <h1>MG AI Blog</h1>
+  <p>Hands on AI tests from my YouTube videos: what I tried, what it cost, what worked, and the prompts and Claude Code skills you can reuse.</p>
+</section>
+<ul class="post-list">
+{% for post in site.posts %}
+  <li>
+    <a href="{{ post.url | relative_url }}">
+      {% if post.image %}<img src="{{ post.image | relative_url }}" alt="" loading="lazy" width="320" height="180">{% endif %}
+      <div>
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.description }}</p>
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+      </div>
+    </a>
+  </li>
+{% endfor %}
+</ul>
