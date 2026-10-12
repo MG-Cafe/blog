@@ -4,6 +4,7 @@ author: MG
 url: "https://mg-cafe.github.io"
 baseurl: "/blog"
 lang: en
+timezone: America/Vancouver
 permalink: /:title/
 
 markdown: kramdown

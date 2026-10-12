@@ -3,7 +3,7 @@ layout: post
 title: "How to Reverse Engineer Anything in Claude Code: my REA test, lessons and prompt tips"
 description: "I gave Claude Code a compiled iPhone app with no source code and asked it to rebuild one screen twice, once without REA and once with it. Here is what each run got right, what it cost, and the prompt lines I now add every time."
 kicker: "Claude Code · REA · Reverse engineering"
-date: 2026-10-11 18:00:00 -0700
+date: 2026-10-11 12:00:00 -0700
 permalink: /reverse-engineer-anything-claude-code/
 image: /assets/img/rea/thumbnail.jpg
 image_alt: "My real app next to the clone Claude Code built with REA"
